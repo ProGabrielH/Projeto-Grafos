@@ -55,7 +55,7 @@ def simular_falha(G, aeroportos_removidos):
 def visualizar_grafo_completo(G):
     plt.figure(figsize=(12, 8))
 
-    pos = nx.spring_layout(G, k=0.3)  # Ajusta o espaçamento dos nós
+    pos = nx.spring_layout(G, k=0.3)
     nx.draw(
         G, pos, with_labels=True, node_size=500, font_size=10, edge_color="gray", alpha=0.5
     )
